@@ -124,7 +124,7 @@ body {
   /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
   display: flex;
   background: #222;
-  background:rgba(252, 224, 246, 0.7);
+  background:rgba(252, 224, 246, 0.9);
   color: rgb(68, 26, 70);
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
