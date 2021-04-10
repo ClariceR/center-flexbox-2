@@ -97,38 +97,49 @@ textarea {
 
 /*Large Background Image*/
 html {
-  background: url(../img/bkgd2.jpg) no-repeat center center fixed;
+  background: url(../img/bkgd2mod.jpg) no-repeat center fixed;
+  background-size: cover;
    /* set height to 100% - these are important for allowing content to vertically align */
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
   /* set height to 100% - these are important for allowing content to vertically align */
+  height: 100%;
 }
 
 .wrapper {
   /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
-  margin: 0;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0 0 12px;
   height: 100%;
   width: 100%;
 }
 
-#content {
+#content, #extra {
   /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
+  display: flex;
   background: #222;
-  background:rgba(0,0,0,0.7);
-  color: #fff;
+  background:rgba(252, 224, 246, 0.7);
+  color: rgb(68, 26, 70);
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 1.25em;
+  justify-content: center;
+  align-items: center;
   line-height: 1.5em;
   border-radius: 10px;
-  padding: 0px 30px;
+  padding: 0 30px;
   width: 300px;
   height: 300px;
 }
 
 #content p span {
-  font-family: 'Lora', sans-serif;
+  font-family: 'Abril Fatface', serif;
 }
 
 
@@ -215,8 +226,11 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 48em) {
     /* Style adjustments for viewports that meet the condition */
+    .wrapper {
+        flex-direction: column;
+    }
 }
 
 @media print,
